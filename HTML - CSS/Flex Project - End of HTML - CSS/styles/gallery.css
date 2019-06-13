@@ -1,0 +1,289 @@
+html,body {
+	height: 100%;
+	font-family: 'Inconsolata', monospace;
+	background: #191919; 
+	color: grey;
+}
+
+/*HEADER AND NAV*/
+
+header {
+	display: flex;
+	border-bottom: 2px solid grey;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	height: 100px;
+	font-size: 20px;
+}
+
+#imgLogo {
+	width: 260px;
+	height: 80px;
+	margin-left: 10px;
+}
+
+#divImgLogo {
+	border-right: 2px solid grey;
+	margin-right: 350px;
+}
+
+.headerChild {
+	flex-grow: 1;
+}
+
+.headerChild a{
+	text-decoration: none;
+	color: grey;
+	padding-left: 25px;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 5px;
+}
+
+ul li {
+	padding: 15px;
+
+}
+
+ul li a:hover {
+	color: green;
+}
+
+#search {
+	border-radius: 10px;
+	background: #c7e7ea url(../images/magnify2.png) no-repeat 5px 5px;
+	outline: none;
+	border: none;
+	color: black;
+	padding:4px 4px 4px 25px;
+	margin-top: 60px;
+	margin-right: -50px;
+}
+
+/*MAIN CONTENT*/
+
+.containerBottom {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+
+.containerBottom2 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+}
+.containerBottom3 {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10px;
+	border-bottom: 2px solid grey;
+	padding-bottom: 5px;
+}
+
+.images {
+	width: 29%;
+	height: 350px;
+}
+
+span {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+/*RESPONSIVE 1200*/ 
+@media only screen and (max-width: 1200px) {
+	header div:nth-child(1){
+		width: 100%;
+		margin-left: 50px;
+		padding-bottom: 0;
+		display: block;
+	}
+
+	header {
+		flex-flow: row wrap;
+		padding-bottom: 15px;
+	}
+
+	.headerChild {
+		text-align: center;
+	}
+
+	ul {
+		background: #232323;
+		width: 100%;
+		margin-top: 15px;
+		justify-content: center;
+	}
+
+	ul li {
+		padding: 5px;
+		width: 50%;
+	}
+
+	header div:nth-child(3) {
+		display: flex;
+		align-self: center;
+		width: 22px;
+	}
+
+	#search {
+		display: block;
+		margin: auto;
+		width: 80%;
+		justify-content: column;
+	}
+
+	#containerBottom {
+		margin-top: 250px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	#divImgLogo {
+		border: none;
+	}
+
+	#imgLogo {
+		margin: 0 auto 0 auto;
+		align-self: center;
+		justify-content: center;
+	}
+
+	.containerBottom {
+		margin-top: 250px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	.containerBottom2 {
+		margin-top: -50px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	.containerBottom2 {
+		margin-top: -50px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	.containerBottom3 {
+		margin-top: -50px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	.images {
+		width: 80%;
+		height: 350px;
+		margin: 0 auto;
+	}
+	
+}
+
+/*RESPONSIVE 800*/ 
+
+
+@media only screen and (max-width: 800px) {
+	header div:nth-child(1){
+		width: 100%;
+		margin-left: 50px;
+		padding-bottom: 0;
+		display: block;
+	}
+
+	header {
+		flex-flow: row wrap;
+		padding-bottom: 15px;
+	}
+
+	.headerChild {
+		text-align: center;
+	}
+
+	ul {
+		background: #232323;
+		width: 100%;
+		margin-top: 15px;
+		justify-content: center;
+	}
+
+	ul li {
+		padding: 5px;
+		width: 50%;
+	}
+
+	header div:nth-child(3) {
+		display: flex;
+		align-self: center;
+		width: 22px;
+	}
+
+	#search {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	#containerBottom {
+		margin-top: 250px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	#divImgLogo {
+		border: none;
+	}
+
+	#imgLogo {
+		margin: 0 auto 0 auto;
+		align-self: center;
+		justify-content: center;
+	}
+
+	.containerBottom {
+		margin-top: 250px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	.containerBottom2 {
+		margin-top: -50px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	.containerBottom2 {
+		margin-top: -50px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	.containerBottom3 {
+		margin-top: -50px;
+		padding: 25px;
+		align-self: center;
+		flex-direction: column;
+	}
+
+	.images {
+		width: 80%;
+		height: 350px;
+		margin: 0 auto;
+	}
+}

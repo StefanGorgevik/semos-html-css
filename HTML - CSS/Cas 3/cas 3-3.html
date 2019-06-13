@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vezba</title>
+	<style type="text/css">	
+		label {
+			font-weight: bold;
+		}
+
+		
+		::placeholder { 
+  			color: blue;
+		}
+
+		body {
+			background-color: green;
+		}
+
+		input[type=checkbox] {
+			transform: scale(1.8);
+		}
+		
+	</style>
+</head>
+<body>
+<h1>Registration Form:</h1>
+<hr>
+
+<form>
+
+
+	<label>Name:
+	<input class="center-block" type="text" name="name" autofocus placeholder="Name">
+	</label>
+
+	<br>
+
+	<label>Last Name:
+		<input class="center-block" type="text" name="lastName" placeholder="Last Name">
+	</label>
+
+
+	<br>
+
+	<label>Gender: <br>
+		<input type="radio" name="gender" value="male">Male
+	<br>
+		<input type="radio" name="gender" value="female">Female
+	</label>
+
+	<br>
+
+	<label>Email:
+		<input class="center-block" type="email" name="email" placeholder="Email"></label>
+
+	<br>
+
+	<label>Password:
+		<input class="center-block" type="password" name="password" placeholder="Password">
+	</label>
+
+	<br>
+
+	<label>Date of birth:
+		<input type="date" name="date">
+	</label>
+
+	<br><br>
+
+	<label>Sports: <br>
+		<input type="checkbox" name="Sports" value="Soccer">Soccer
+		<input type="checkbox" name="Sports" value="Handball">Handball
+		<input type="checkbox" name="Sports" value="Basketball">Basketball
+	</label>
+
+
+	<br><br>
+
+	<label>Countries:
+	<select name="Countries" multiple>
+		<option value="MK">Macedonia</option>
+		<option value="EN">England</option>
+		<option value="SRB">Serbia</option>
+		<option value="RUS">Russia</option>
+	</select></label>
+
+	<br><br>
+
+	<label>Cities:
+	<select name="Countries">
+		<option value="MK">Veles</option>
+		<option value="EN">Bitola</option>
+		<option value="SRB">Skopje</option>
+		<option value="RUS">Ohrid</option>
+	</select></label>
+	
+
+	<br><br>
+
+	<label>Comments:
+		<textarea class="center-block" placeholder="Comments"></textarea>
+	</label>
+
+	<br>
+	<input type="submit" name="Login">
+
+
+
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+html,body {
+	height: 100%;
+	font-family: 'Inconsolata', monospace;
+	background: #191919; 
+	color: grey;
+}
+
+header {
+	display: flex;
+	border-bottom: 2px solid grey;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	height: 100px;
+	font-size: 20px;
+}
+
+#imgLogo {
+	width: 260px;
+	height: 80px;
+	margin-left: 10px;
+}
+
+#divImgLogo {
+	border-right: 2px solid grey;
+	margin-right: 350px;
+}
+
+.headerChild {
+	flex-grow: 1;
+}
+
+.headerChild a{
+	text-decoration: none;
+	color: grey;
+	padding-left: 25px;
+}
+
+
+ul {
+	list-style-type: none;
+	display: flex;
+	flex-flow: row wrap;
+	padding: 5px;
+}
+
+ul li {
+	padding: 15px;
+
+}
+
+ul li a:hover {
+	color: green;
+	font-size: 25px;
+}
+
+#search {
+	border-radius: 10px;
+	background: #c7e7ea url(../images/magnify2.png) no-repeat 5px 5px;
+	outline: none;
+	border: none;
+	color: black;
+	padding:4px 4px 4px 25px;
+	margin-top: 60px;
+	margin-right: -50px;
+}
+
+#containerBottom {
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+#containerBottom h1 {
+	margin-top: -25px;
+	margin-bottom: 70px;
+}
+
+#button {
+	width: 90px; 
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+button {
+	border-radius: 5px;
+	background-color: transparent;
+	padding: 12px 24px 12px 24px;
+
+}
+
+button a {
+	text-decoration: none;
+	color: grey;
+	font-size: 19px;
+}
+
+button a:hover {
+	color: #42f492;
+	font-size: 26px;
+}
+
+span {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+	header div:nth-child(1){
+		width: 100%;
+		margin-left: 50px;
+		padding-bottom: 0;
+		display: block;
+	}
+
+	header {
+		flex-flow: row wrap;
+		padding-bottom: 15px;
+	}
+
+	.headerChild {
+		text-align: center;
+	}
+
+	ul {
+		background: #232323;
+		width: 100%;
+		margin-top: 15px;
+		justify-content: center;
+	}
+
+	ul li {
+		padding: 5px;
+		width: 50%;
+	}
+
+	header div:nth-child(3) {
+		display: flex;
+		align-self: center;
+		width: 22px;
+	}
+
+	#search {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	#containerBottom {
+		margin-top: 250px;
+		padding: 25px;
+		align-self: center;
+	}
+
+	#divImgLogo {
+		border: none;
+	}
+
+	#imgLogo {
+		margin: 0 auto 0 auto;
+		align-self: center;
+		justify-content: center;
+	}
+}
